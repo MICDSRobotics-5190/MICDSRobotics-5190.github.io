@@ -1,5 +1,5 @@
 current directory: /mnt/share/Projects/MICDSRobotics/vendor/bundle/ruby/2.4.0/gems/ffi-1.9.18/ext/ffi_c
-/usr/bin/ruby -r ./siteconf20171028-12194-wavtit.rb extconf.rb
+/usr/bin/ruby -r ./siteconf20171029-32162-1mfss40.rb extconf.rb
 checking for ffi_call() in -lffi... yes
 checking for ffi_prep_closure()... yes
 checking for ffi_raw_call()... yes
@@ -61,4 +61,4 @@ linking shared-object ffi_c.so
 
 current directory: /mnt/share/Projects/MICDSRobotics/vendor/bundle/ruby/2.4.0/gems/ffi-1.9.18/ext/ffi_c
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20171028-12194-w7qm75
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20171029-32162-1iekba3

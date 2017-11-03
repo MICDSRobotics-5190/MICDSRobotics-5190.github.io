@@ -1,7 +1,7 @@
-title: Long Haul
+title: Technoramic 5190
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: http://brianmaierjr.github.com/long-haul
+url: http://MMICDSRobotics.github.com/
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -18,11 +18,15 @@ navigation:
    url: /about
  - title: Contact
    url: /contact
+ - title: Robot
+   url: /robot
+ - title: Programming
+   url: /programming
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: MICDSRobotics
+   twitter: technoramic5190
+   facebook: technoramic5190
+   email: micdsrobotics@gmail.com
 
 google_analytics: "UA-58263416-1"

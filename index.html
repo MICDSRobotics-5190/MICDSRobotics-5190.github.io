@@ -11,7 +11,7 @@ title: Technoramic 5190
         <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
-        <span class="date">By Blake Abel</span>
+        <span class="date">By {{ post.author }}</span>
       </li>
     {% endfor %}
   </ul>

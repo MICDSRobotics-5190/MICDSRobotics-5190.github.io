@@ -9,23 +9,35 @@ Technoramic is the co-ed high school robotics team from MICDS. We offer robotics
 
 ## Team Members
 
-{% if site.data.team.members[0] %}
-  <table>
-  {% for group in site.data.team.members %}
-    <tr>
-      {% for item in group %}
-      <td>
-        <img src="{{ item.picture }}" alt="{{ item.name }}">
-        <p> {{ item.name }} </p>
+{% for group in site.data.members %}
+  <table style="border:0px;">
+    {% for rows in group.people %}
+    <tr style="border:0px;">
+      {% for person in rows.row %}
+      <td style="border:0px;">
+        <img src="../{{ person.picture }}" alt="{{ person.name }}">
+        <p> {{ person.name }} </p>
       </td>
       {% endfor %}
     </tr>
-  {% endfor %}
+    {% endfor %}
   </table>
-{% endif %}
+{% endfor %}
 
 
 #### Alumni
 
-|:-------------------------:|:-------------------------:|:-------------------------:|
-| Potato | Potata | Tomato |
+{% for group in site.data.alumni %}
+  <table style="border:0px;">
+    {% for rows in group.people %}
+    <tr style="border:0px;">
+      {% for person in rows.row %}
+      <td style="border:0px;">
+        <img src="../{{ person.picture }}" alt="{{ person.name }}">
+        <p> {{ person.name }} </p>
+      </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+{% endfor %}

@@ -1,9 +1,24 @@
 members:
-  - name:
-    picture:
-  - name:
-    picture:
-  - name:
-    picture:
+  - row:
+    - name: Kendall Work
+      picture: assets/img/team/kendall.jpg
+    - name: Megan Currie
+      picture: assets/img/team/megan.jpg
+    - name: Blake Abel
+      picture: assets/img/team/blake.jpg
+  - row:
+    - name: Ehan kamat
+      picture: assets/img/team/ehan.jpg
+    - name: Alex Migala
+      picture: assets/img/team/alex.jpg
+    - name: Amir Shinawi
+      picture: assets/img/team/amir.jpg
+  - row:
+    - name: Jude Sorkin
+      picture: assets/img/team/jude.jpg
+    - name: Will Schott
+      picture: assets/img/team/will.jpg
+    - name: Kyle Fehr
+      picture: assets/img/team/kyle.jpg
 
 alumni:

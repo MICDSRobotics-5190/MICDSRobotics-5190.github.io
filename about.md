@@ -9,9 +9,21 @@ Technoramic is the co-ed high school robotics team from MICDS. We offer robotics
 
 ## Team Members
 
+{% if site.data.team.members[0] %}
+  <table>
+  {% for group in site.data.team.members %}
+    <tr>
+      {% for item in group %}
+      <td>
+        <img src="{{ item.picture }}" alt="{{ item.name }}">
+        <p> {{ item.name }} </p>
+      </td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+  </table>
+{% endif %}
 
-|:-------------------------:|:-------------------------:|:-------------------------:|
-| Potato | Potata | Tomato |
 
 #### Alumni
 

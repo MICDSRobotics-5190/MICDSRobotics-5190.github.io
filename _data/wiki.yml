@@ -1,0 +1,18 @@
+- title: Setting Up
+  subpages:
+    - title: Git & GitHub
+      url: /wiki/github-start
+    - title: Android Studio
+      url: /wiki/android-studio
+- title: Writing Code for Robots
+  subpages:
+    - title: Writing TeleOp
+      url: /wiki/writing-teleop
+    - title: Writing Autonomous
+      url: /wiki/writing-autonomous
+    - title: Making a Configuration
+      url: /wiki/configuration-file
+- title: Extra Tools
+  subpages:
+    - title: ADB
+      url: /wiki/adb

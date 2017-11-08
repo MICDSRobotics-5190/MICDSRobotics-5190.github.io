@@ -22,6 +22,11 @@ This is our repository for the code we're using on our robots for the 2017-2018 
 
 ### Teaching Resources
 
-All of our resources for teaching new members the basics of Android Studio with FTC's SDK and getting started with Github are found on our wiki!
+All of our resources for teaching new members the basics of Android Studio with FTC's SDK and getting started with Github are found on our wiki below!
 
-**wiki link**
+{% for entry in site.data.wiki %}
+####  {{ entry.title }}
+  {% for subpage in entry.subpages %}
+* [{{ subpage.title }}]({{ subpage.url }})
+  {% endfor %}
+{% endfor %}

@@ -82,4 +82,4 @@ You can go ahead and hit install to install the packages. Your Android Studio is
 
 To do that, you'll want to clone this repository to your computer. For instructions on how to do that, head over our section on setting up Github and learning some basic functions for it.
 
-* [Getting started with Github](https://github.com/blabel3/MicdsRobotics/wiki/Github---Getting-Started)
+* [Getting started with Github]({{ site.url }}/wiki/github-start)

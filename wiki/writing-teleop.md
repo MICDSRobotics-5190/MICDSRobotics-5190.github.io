@@ -7,12 +7,13 @@ title: Writing a Driver-Controlled OpMode
 
 **_Important Documentation:_**
 
-* `file:///C:/Users/<YOUR_USERNAME>/Documents/GitHub/MicdsRobotics/ftc_app-master/doc/javadoc/index.html` or `http://ftctechnh.github.io/ftc_app/doc/javadoc/index.html` _(Everything)_
-* `file:///C:/Users/<YOUR_USERNAME>/Documents/GitHub/MicdsRobotics/ftc_app-master/doc/javadoc/com/qualcomm/robotcore/eventloop/opmode/OpMode.html` _(TeleOp)_
+* [Everything](http://ftctechnh.github.io/ftc_app/doc/javadoc/index.html)
+* [OpMode](http://ftctechnh.github.io/ftc_app/doc/javadoc/com/qualcomm/robotcore/eventloop/opmode/OpMode.html) - The basic flow of a driver-controlled OpMode
 
 ## Import Statements
 There are a lot of things you'll probably want to import, but you'll almost always want some of these:
 
+{% highlight java %}
     import com.qualcomm.robotcore.eventloop.opmode.Disabled;  
     import com.qualcomm.robotcore.eventloop.opmode.OpMode;
     import com.qualcomm.robotcore.eventloop.opmode.TeleOp;  
@@ -22,20 +23,25 @@ There are a lot of things you'll probably want to import, but you'll almost alwa
     import com.qualcomm.robotcore.hardware.DcMotorSimple;
     import com.qualcomm.robotcore.hardware.HardwareMap;
     import com.qualcomm.robotcore.util.ElapsedTime;
+{% endhighlight %}
 
 Android Studio will also usually prompt you if something's not imported.
 
 ## Making the Class
 
-For Teleop, you start with this:
+For Teleop, you start with an [Annotation](https://docs.oracle.com/javase/tutorial/java/annotations/) to tell the app to show the OpMode on the DriverStation on the TeleOp side:
 
-`@TeleOp(name="<What you want it to show as on the app>", group="<The group you want it in (useful for sorting and grouping)>")`  
+{% highlight java %}
+@TeleOp(name="<What you want it to show as on the app>", group="<The group you want it in (useful for sorting and grouping)>")
+{% endhighlight %}
 
 You can add `@Disabled` if you want it to not show up in the app. Then you start it off with your actual class declaration:
 
-`public class driveTest extends OpMode { ... }`
+{% highlight java %}
+public class driveTest extends OpMode { ... }
+{% endhighlight %}
 
-You could also just copy the one of the template Opmodes from `\ftc_app-master\FtcRobotController\src\main\java\org\firstinspires\ftc\robotcontroller\external\samples` - Look for an iterative OpMode template.
+You could also just copy the one of the template OpModes from the sample OpModes - I use BasicOpMode_Iterative.
 
 ## Declaring Hardware
 
@@ -43,11 +49,13 @@ To use motors, we need to somehow find a way to send voltages to the Core Power 
 
 So to do that, we just declare an object like normal, of whatever we need. Their value should be set to null in the class, because it's better to get the hardware values after initializing so that you can change the configuration file on the fly. It'll look something like this:
 
+{% highlight java %}
     private DcMotor leftMotor = null;
     private DcMotor rightMotor = null;
 
     private CRServo spinner = null;
     private Servo hitter = null;
+{% endhighlight %}    
 
 Now we can go into the initialization.
 
@@ -60,8 +68,10 @@ To do that, we'll set the objects equal to one of these statements: `hardwareMap
 
 The whole statements should look something like this:
 
+{% highlight java %}
     leftMotor = hardwareMap.dcMotor.get("left motor");
     spinner = hardwareMap.crservo.get("spinner");
+{% endhighlight %}
 
 ### Preparing the motors and servos
 
@@ -73,13 +83,17 @@ The first big thing is to set the motor directions. They can either be forward o
 
 To use it, you call it on a DcMotor object, with a direction in its parameter. The two directions we have are:
 
+{% highlight java %}
     DcMotor.Direction.REVERSE
     DcMotor.Direction.FORWARD
+{% endhighlight %}
 
 two constants that correspond to forward and backward. After you're done, the whole statement should look something like this:
 
+{% highlight java %}
     leftMotor.setDirection(DcMotor.Direction.REVERSE);
     spinner.setDirection(Servo.Direction.FORWARD);
+{% endhighlight %}
 
 #### Setting Modes
 
@@ -92,8 +106,10 @@ The other big thing is to set the all the motors' modes. There are a few big mod
 
 And that's all of them. So, once you pick the one you think would be most suited for the program, we can actually set it. It's going to be very similar to setting the direction, just this time we're using `setMode(<mode>)`. The end result will be something like this:
 
+{% highlight java %}
     leftMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
     rightMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+{% endhighlight %}
 
 You're all set now! Time to get into the fun stuff!
 
@@ -119,6 +135,7 @@ There's also other buttons and values you can get from the gamepad, but they're 
 
 There are tons of methods to use, especially with encoders, but the one that is used by far the most is `setPower(<power>)`. It sets a motor's voltage to nothing (0), full (1), full reverse (-1), and every value in between. Used with the gamepad's joysticks, it's easy to translate fully up to full power forwards. Using this with if statements and buttons works particularly well too. It'll work something like this many times:
 
+{% highlight java %}
     leftMotor.setPower(-gamepad1.left_stick_y);
     rightMotor.setPower(-gamepad1.right_stick_y);
 
@@ -129,6 +146,7 @@ There are tons of methods to use, especially with encoders, but the one that is 
     } else {
         slider.setPower(0);
     }
+{% endhighlight %}
 
 There's also `getPower()`, which returns whatever value the power is currently set to. Not super useful when trying to actually move the robot but incredibly nice when debugging and making sure everything works as intended with telemetry...
 
@@ -138,18 +156,24 @@ This is the main way of printing things to the phone. Could be a string, could b
 
 This takes in two strings as it's parameters: a title and a value. The title is any string you want, but usually it's good to just type one in yourself that has some relevance to what it represents. No one's stopping you from making it a meme though. With a title, it'll look something like this:
 
+{% highlight java %}
     telemetry.addData("Left Motor", <value>);
+{% endhighlight %}
 
 The value can be almost anything as well, from Strings to floats. The ones that are used the most are values returned from `getPower()` and `getCurrentPosition()` (for encoders) or `getPosition()` (for servos), which help a lot for making sure that motors and encoders are working as intended. With the value inserted as well, the statement'll look something like this:
 
+{% highlight java %}
     telemetry.addData("Left Motor", leftMotor.getPower());
+{% endhighlight %}
 
 All that's left is to call `telemtry.update();`. You only do this once inside the loop, otherwise the output will look super janky as it tries to update twice a frame. This just makes sure that all the values get refreshed and prints them to the screen. At the end of a few statements, your code will probably look something like this:
 
+{% highlight java %}
     telemetry.addData("Left Motor", leftMotor.getPower());
     telemetry.addData("Right Motor", rightMotor.getPower());
     telemetry.addData("Spinner", spinner.getPosition());
     telemetry.update();
+{% endhighlight %}
 
 ## Recap
 

@@ -1,43 +1,52 @@
 ---
 layout: default
-title: Writing an Autonomous OpMode
+title: Writing Autonomous
 ---
 
 # {{ page.title }}
+
 **_Important Documentation:_**
 
-* `file:///C:/Users/<YOUR_USERNAME>/Documents/GitHub/MicdsRobotics/ftc_app-master/doc/javadoc/index.html`  or `http://ftctechnh.github.io/ftc_app/doc/javadoc/index.html` _(Everything)_
-* `file:///C:/Users/<YOUR_USERNAME>/Documents/GitHub/MicdsRobotics/ftc_app-master/doc/javadoc/com/qualcomm/robotcore/eventloop/opmode/LinearOpMode.html` _(TeleOp)_
+* [Everything](http://ftctechnh.github.io/ftc_app/doc/javadoc/index.html)
+* [LinearOpMode](http://ftctechnh.github.io/ftc_app/doc/javadoc/com/qualcomm/robotcore/eventloop/opmode/LinearOpMode.html) - The basic flow of an Autonomous OpMode
 
-(Usually, it's a good idea to start with creating TeleOp)
+(Usually, it's a good idea to start with creating TeleOp before Autonomous)
 
-## Import Statements
+### Import Statements
 There are a lot of things you'll probably want to import, but you'll almost always want some of these:
 
-    import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-    import com.qualcomm.robotcore.eventloop.opmode.Disabled;
-    import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-    import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-    import com.qualcomm.robotcore.hardware.DcMotor;
-    import com.qualcomm.robotcore.hardware.HardwareMap;
-    import com.qualcomm.robotcore.util.ElapsedTime;
-    import com.qualcomm.robotcore.util.RobotLog;
+{% highlight java %}
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.HardwareMap;
+import com.qualcomm.robotcore.util.ElapsedTime;
+import com.qualcomm.robotcore.util.RobotLog;
+{% endhighlight %}
 
 Android Studio will also usually prompt you if something's not imported.
 
 ## Making the Class
 
-For Autonomous, you start with this:
+For Autonomous, you start with an [Annotation](https://docs.oracle.com/javase/tutorial/java/annotations/) to tell the app to show the OpMode on the DriverStation on the Autonomous side:
 
-`@Autonomous(name="<What you want it to show as on the app>", group="<The group you want it in (useful for sorting and grouping)>")`  
+{% highlight java %}
+@Autonomous(name="<What you want it to show as on the app>", group="<The group you want it in (useful for sorting and grouping)>")
+{% endhighlight %}
 
-You can add `@Disabled` if you want it to not show up in the app. Then you start it off with your actual class declaration:
+You can replace `@Autonomous` with `@Disabled` if you want it to not show up in the app.
 
-`public class selfDriving extends LinearOpMode { ... }`
+Then you start it off with your actual class declaration:
 
-LinearOpMode has a few methods that OpMode doesn't have, such as `sleep()`, which really help out when you can't rely on a driver to control the robot
+{% highlight java %}
+public class selfDriving extends LinearOpMode { ... }
+{% endhighlight %}
 
-You could also just copy the one of the template OpModes from `\ftc_app-master\FtcRobotController\src\main\java\org\firstinspires\ftc\robotcontroller\external\samples` - Look for a linear OpMode template.
+LinearOpMode has a few methods that OpMode doesn't have, such as `sleep()`, which really help out when you can't rely on a driver to control the robot.
+
+You could also just copy the one of the template OpModes from the sample OpModes - I use BasicOpmode_Linear.
 
 ## Declaring Hardware
 
@@ -45,18 +54,24 @@ Just like writing a Driver-Controlled OpMode, we have to declare our hardware. I
 
 So, anyway, we just declare an object like normal, of whatever we need. Their value should be set to null for now, because it's better to set the hardware values after initializing so that you can change the configuration file on the fly from the phone. It'll look something like this:
 
+{% highlight java %}
     private DcMotor leftMotor = null;
     private DcMotor rightMotor = null;
+{% endhighlight %}
 
+{% highlight java %}
     private CRServo spinner = null;
     private Servo hitter = null;
+{% endhighlight %}
 
 It's also a good idea to define any constants you want to use during autonomous here. Some good ideas we usually use are numbers for motor encoders, or specific times if you're not using any of them. Here's an example:
 
+{% highlight java %}
     final int MOTOR_PULSE_PER_REVOLUTION = 7;
     final int MOTOR_GEAR_RATIO = 80;
     final int FULL_REVOLUTION = 1200;
     final int FLOOR_BLOCK = 2292;
+{% endhighlight %}
 
 Now on to initialization!
 
@@ -64,10 +79,12 @@ Now on to initialization!
 
 During initialization, we link those objects we just created to actual hardware connected to the robot (based on the configuration file). Make sure to remember what you put as parameters for `get()`, because that's the key to linking this to the configuration file.
 
-This time though, there's in `init()`. Instead, we just put the code inside `runOpMode()`.
+This time though, there's no `init()` to use. Instead, we just put the code inside `runOpMode()`, which is called right when the OpMode is ran.
 
+{% highlight java %}
     @Override
     public void runOpMode() throws InterruptedException {
+{% endhighlight %}
 
 The `InterruptedException` allows for methods like `sleep()` to run without an issue and without messing with other things like runtime.
 
@@ -77,8 +94,10 @@ To link the hardware to the objects, we'll set the objects equal to one of these
 
 The whole statements should look something like this:
 
+{% highlight java %}
     leftMotor = hardwareMap.dcMotor.get("left motor");
     spinner = hardwareMap.crservo.get("spinner");
+{% endhighlight %}
 
 ### Preparing the motors and servos
 
@@ -90,13 +109,17 @@ The first big thing is to set the motor directions. They can either be forward o
 
 To use it, you call it on a DcMotor object, with a direction in its parameter. The two directions we have are:
 
+{% highlight java %}
     DcMotor.Direction.REVERSE
     DcMotor.Direction.FORWARD
+{% endhighlight %}
 
 two constants that correspond to forward and backward. After you're done, the whole statement should look something like this:
 
+{% highlight java %}
     leftMotor.setDirection(DcMotor.Direction.REVERSE);
     spinner.setDirection(Servo.Direction.FORWARD);
+{% endhighlight %}
 
 #### Setting Modes
 
@@ -109,8 +132,10 @@ The other big thing is to set the all the motors' modes. There are a few big mod
 
 And that's all of them. So, once you pick the one you think would be most suited for the program, we can actually set it. It's going to be very similar to setting the direction, just this time we're using `setMode(<mode>)`. The end result will be something like this:
 
+{% highlight java %}
     leftMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
     rightMotor.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+{% endhighlight %}
 
 You're all set now! Time to get into the fun stuff!
 
@@ -124,12 +149,12 @@ At the end of the loop, call `idle();`. It's not actually necessary to run, but 
 
 Your skeleton Autonomous should look something like this.
 
+{% highlight java %}
     while (opModeIsActive()) {
-
         // All the code for your routines
-
         idle();
     }
+{% endhighlight %}
 
 ### Telemetry
 
@@ -139,22 +164,26 @@ To use telemetry, we will use `telemetry.addData(<title>, <value>)`, just like w
 
 This takes in two strings as it's parameters: a title and a value. The title is any string you want, but usually it's good to just type one in yourself that has some relevance to what it represents. No one's stopping you from making it a meme though. With a title, it'll look something like this:
 
+{% highlight java %}
     telemetry.addData("Left Motor", <value>);
+{% endhighlight %}
 
 The value can be almost anything as well, from Strings to floats. The ones that are used the most are values returned from `getPower()` and `getCurrentPosition()` (for encoders) or `getPosition()` (for servos), which help a lot for making sure that motors and encoders are working as intended. With the value inserted as well, the statement will look something like this:
 
+{% highlight java %}
     telemetry.addData("Left Motor", leftMotor.getPower());
+{% endhighlight %}
 
 All that's left is to call `telemtry.update();`. During Autonomous, it will update the other statements as well when it's called, so you don't have to rewrite everything. The final code should look something like this, when you're done:
 
+{% highlight java %}
     telemetry.addData("Left Motor", leftMotor.getPower());
     telemetry.addData("Right Motor", rightMotor.getPower());
     telemetry.addData("Spinner", spinner.getPosition());
     telemetry.update();
-
     . . . //Other parts of the autonomous
-
     telemetry.update();
+{% endhighlight %}
 
 ### Moving the Robot
 

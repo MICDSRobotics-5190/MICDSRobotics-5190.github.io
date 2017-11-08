@@ -9,4 +9,4 @@ Check out any of the social media links below and we'll get back as soon as poss
 
 If you are a sponsor looking to make a donation to the team, you can use our PayPay donate button below to do so!
 
-*button here lol*
+*~button here lol~*

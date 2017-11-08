@@ -181,4 +181,4 @@ Alright, now you know which files you need to import into many TeleOp programs a
 
 You know how to make a Driver-Controlled OpMode! Nice. :)
 
-If you're still stuck or want to make sure you're heading in the right direction, you can check [our Driver-Controlled OpMode](https://github.com/blabel3/MicdsRobotics/blob/master/ftc_app-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/DadDriver.java).
+If you're still stuck or want to make sure you're heading in the right direction, you can check out a driver controlled opmode we're using in [our season's code](https://github.com/MICDSRobotics/RelicRecovery).

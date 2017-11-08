@@ -203,4 +203,4 @@ You know some of the differences and similarities between TeleOp OpModes and Aut
 
 You know how to make an Autonomous OpMode! Way to go. :)
 
-If you're still stuck or want to make sure you're heading in the right direction, you can check [our Basic Autonomous OpMode](https://github.com/blabel3/MicdsRobotics/blob/master/ftc_app-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RedTeamUnbeacon.java).
+If you're still stuck or want to make sure you're heading in the right direction, you can check out an autonomous opmode we're using inside [our season code](https://github.com/MICDSRobotics/RelicRecovery).

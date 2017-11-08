@@ -20,4 +20,8 @@ This is our repository for the code we're using on our robots for the 2017-2018 
 * Javadoc hosted here: [{{ site.url }}/RelicRevovery](/RelicRecovery)
 * FTC's SDK's most updated Javadoc also hosted here: [http://ftctechnh.github.io/ftc_app/doc/javadoc/index.html](http://ftctechnh.github.io/ftc_app/doc/javadoc/index.html)
 
-~Also let's get a wiki here somehow?~
+### Teaching Resources
+
+All of our resources for teaching new members the basics of Android Studio with FTC's SDK and getting started with Github are found on our wiki!
+
+**wiki link**

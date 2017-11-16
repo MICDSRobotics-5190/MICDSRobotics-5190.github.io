@@ -8,7 +8,7 @@
         - name: Blake Abel
           picture: assets/img/team/blake.jpg
     - row:
-        - name: Ehan kamat
+        - name: Ehan Kamat
           picture: assets/img/team/ehan.jpg
         - name: Alex Migala
           picture: assets/img/team/alex.jpg
@@ -21,3 +21,42 @@
           picture: assets/img/team/will.jpg
         - name: Kyle Fehr
           picture: assets/img/team/kyle.jpg
+    - row:
+        - name: Nick Clifford
+          picture: assets/img/team/nick.jpg
+        - name: Benjamin Hollander-Bodie
+          picture: assets/img/team/na.jpg
+        - name: Sebastian Neumann
+          picture: assets/img/team/sebastian.jpg
+    - row:
+        - name: Sofi Carr
+          picture: assets/img/team/sofi.jpg
+        - name: Allen Buckner
+          picture: assets/img/team/na.jpg
+        - name: Prithvi Dhanabal
+          picture: assets/img/team/na.jpg
+    - row:
+        - name: Hasani Spann
+          picture: assets/img/team/na.jpg
+        - name: Kellen Von Hoven
+          picture: assets/img/team/na.jpg
+        - name: Cassidy Kearins
+          picture: assets/img/team/na.jpg
+    - row:
+        - name: Grace Lee
+          picture: assets/img/team/na.jpg
+        - name: Lucas McCarty
+          picture: assets/img/team/lucas.jpg
+        - name: Maxim Novak
+          picture: assets/img/team/na.jpg
+    - row:
+        - name: Liam Weber
+          picture: assets/img/team/na.jpg
+        - name: Celia Sprong
+          picture: assets/img/team/na.jpg
+        - name: Jacob Tielking
+          picture: assets/img/team/na.jpg
+          
+    - row:
+        - name: Josh Poole
+          picture: assets/img/team/josh.jpg

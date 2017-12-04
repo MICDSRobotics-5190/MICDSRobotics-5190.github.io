@@ -5,7 +5,7 @@ title: Robot Overview
 
 # Robot Status: *Tweaks*
 
-Our robot is currently being worked
+Our robot is currently being worked.
 
 # Robot Technologies
 

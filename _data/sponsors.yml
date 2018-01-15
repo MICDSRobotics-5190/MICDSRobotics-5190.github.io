@@ -1,0 +1,19 @@
+- group: "Sponsors"
+  companies:
+    - row:
+        - name: Jarrell
+          picture: assets/img/sponsors/jarell.png
+        - name: ITC
+          picture: assets/img/sponsors/itc.png
+        - name: Gateway Electronics
+          picture: assets/img/sponsors/gatewayelectronics.png
+    - row:
+        - name: Servocity
+          picture: assets/img/sponsors/servocity.png
+        - name: Sandisk
+          picture: assets/img/sponsors/sandisk.png
+        - name: Buttonmakers.net
+          picture: assets/img/sponsors/buttonmakers.png
+    - row:
+        - name: MICDS
+          picture: assets/img/sponsors/micds.png

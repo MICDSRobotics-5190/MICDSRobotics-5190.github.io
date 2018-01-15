@@ -1,1 +1,7 @@
 - group: "Alumni"
+  people:
+    - row:
+        - name: Clayton Pope
+          picture: assets/img/alumni/sized/clayton.jpg
+        - name: Niema Foroughi
+          picture: assets/img/alumni/sized/niema.jpg

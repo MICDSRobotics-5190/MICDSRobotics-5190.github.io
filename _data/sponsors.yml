@@ -2,7 +2,7 @@
   companies:
     - row:
         - name: Jarrell
-          picture: assets/img/sponsors/jarell.png
+          picture: assets/img/sponsors/jarrell.png
         - name: ITC
           picture: assets/img/sponsors/itc.png
         - name: Gateway Electronics

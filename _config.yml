@@ -22,6 +22,8 @@ navigation:
    url: /robot
  - title: Programming
    url: /programming
+ - title: Sponsors
+   url: /sponsors
 
 social:
    github: MICDSRobotics

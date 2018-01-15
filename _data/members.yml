@@ -32,28 +32,28 @@
         - name: Liam Weber
           picture: assets/img/team/sized/liam.jpg
         - name: Allen Buckner
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg
         - name: Prithvi Dhanabal
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg
     - row:
         - name: Hasani Spann
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg
         - name: Kellen Von Hoven
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg
         - name: Cassidy Kearins
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg
 
     - row:
         - name: Benjamin Hollander-Bodie
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg
         - name: Grace Lee
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg
         - name: Maxim Novak
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg
     - row:
         - name: Celia Sprong
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg
         - name: Jacob Tielking
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg
         - name: Shibashis Mandal
-          picture: assets/img/team/na.jpg
+          picture: assets/img/team/sized/na.jpg

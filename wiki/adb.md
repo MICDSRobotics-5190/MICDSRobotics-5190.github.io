@@ -31,6 +31,10 @@ also,
 adb get-state
 ```
 might also be of assistance.
+
+# Using Wifi and Direct Connect
+Connect to the WiFi direct connect network that was created between the driver phone and the driver station phone. Then, if you have a separate Wifi adapter for your computer, plug that in and connect it to a network that has an internet connection. Your computer should be running two simultaneous networks: one should be connected to the phones, and the other one should be connected to the internet.
+
 ## Usage
 This connection will act as a regular USB connection. So treat it if it were plugged into your computer.
 

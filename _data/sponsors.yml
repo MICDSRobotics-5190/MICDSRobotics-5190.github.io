@@ -3,19 +3,27 @@
     - row:
         - name: Jarrell
           picture: assets/img/sponsors/jarrell.png
+          link: https://jarrellcontracting.com/
         - name: ITC
           picture: assets/img/sponsors/itc.png
+          link: http://www.itcjourneys.com/
         - name: Gateway Electronics
           picture: assets/img/sponsors/gatewayelectronics.png
+          link: http://www.gatewaycatalog.com/
     - row:
         - name: Servocity
           picture: assets/img/sponsors/servocity.png
+          link: https://www.servocity.com/
         - name: Sandisk
           picture: assets/img/sponsors/sandisk.png
+          link: https://www.sandisk.com/
         - name: Buttonmakers.net
           picture: assets/img/sponsors/buttonmakers.png
+          link: http://www.buttonmakers.net/
     - row:
         - name: MICDS
           picture: assets/img/sponsors/micds.png
+          link: https://www.micds.org/page
         - name: Microsoft
           picture: assets/img/sponsors/microsoft.png
+          link: https://www.microsoft.com/en-us/

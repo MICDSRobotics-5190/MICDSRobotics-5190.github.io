@@ -7,7 +7,7 @@ author: "Blake Abel"
 
 The competition at state went pretty great! We were ranked third in our division after the qualification matches, and so we got to be alliance captains. Our robot was consistently good, and although we couldn't fill up a cryptobox, getting those 85 points every time in autonomous and always getting a column and a row (*and* sometimes two columns and a row or even two columns and two rows) and parking on the balancing stone at the end was solid.
 
-![State Bot](../assets/img/state bot.JPG)
+![State Bot](https://github.com/MICDSRobotics/MICDSRobotics.github.io/blob/master/assets/img/state.jpg?raw=true)
 
 So, the semifinals start up: our alliance partners are both great at filling up the cryptobox, and one can score relics, but both only have good autonomous for the balancing stone nearer to the relic scoring. We have autonomous programs for every side, so it made sense that we would run more so that both of us get the large amount of autonomous points.
 

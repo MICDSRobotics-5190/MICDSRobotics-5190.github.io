@@ -3,7 +3,7 @@ layout: default
 title: Robot Overview
 ---
 
-# Robot Status: Cool Mom (2nd redesign)
+# Robot Status: Cool Mom (v2)
 
 ![Robot](https://github.com/MICDSRobotics/MICDSRobotics.github.io/blob/master/assets/img/SRPre-Match.jpg?raw=true)
 
@@ -39,7 +39,7 @@ If we started on a side closer to the relic scoring pads, the robot will head ba
 
 ### Teleop
 
-All the controls are accessible by both drivers in case of controller failure. Control of the drivetrain is swappable between drivers with the start button, to help for some drivers that are good at picking up glyphs but bad at scoring them, while also preventing any accidental movements. Most of the intake, jewel arm, and outtake is accessible through buttons on the controller, and the rest is accessibly by holding Y, our "Shift" key, that changes the functionality of the other buttons. This is made possible by our controller wrapper that we developed for that purpose. 
+All the controls are accessible by both drivers in case of controller failure. Control of the drivetrain is swappable between drivers with the start button, to help for some drivers that are good at picking up glyphs but bad at scoring them, while also preventing any accidental movements. Most of the intake, jewel arm, and outtake is accessible through buttons on the controller, and the rest is accessibly by holding Y, our "Shift" key, that changes the functionality of the other buttons. This is made possible by our controller wrapper that we developed for that purpose.
 
 ## Results
 

@@ -17,3 +17,5 @@
     - row:
         - name: MICDS
           picture: assets/img/sponsors/micds.png
+        - name: Microsoft
+          picture: assets/img/sponsors/microsoft.png

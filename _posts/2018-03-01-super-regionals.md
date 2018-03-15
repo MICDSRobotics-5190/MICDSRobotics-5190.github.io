@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Super Regionals!"
+title: "Never Give Up: MO State Competition"
 date: 2018-03-01
 author: "Blake Abel"
 ---

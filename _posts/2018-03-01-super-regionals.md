@@ -13,6 +13,6 @@ So, the semifinals start up: our alliance partners are both great at filling up 
 
 The matches are close! But we end up losing the first match, winning the second, and losing the third. Other than awards, which we didn't think we had a big shot at the time, we most likely wouldn't advance past state.
 
-To everyone's surprise though, they went *deep* int eh advancement criteria. 11 teams qualified from that state competition to South Super regionals-- and they went to the 21st advancement criteria. And **we** were the 21st, the highest ranked team who had not previously advanced. ***We're going to Super Regionals!***
+To everyone's surprise though, they went *deep* in the advancement criteria. 11 teams qualified from that state competition to South Super regionals-- and they went to the 21st advancement criteria. And *we* were the 21st, the highest ranked team who had not previously advanced. ***We're going to Super Regionals!***
 
 State made us realize that we would need to change our intake to stay competetive. We're gonna take Super-Regionals by storm!

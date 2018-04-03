@@ -38,4 +38,7 @@ Connect to the WiFi direct connect network that was created between the driver p
 ## Usage
 This connection will act as a regular USB connection. So treat it if it were plugged into your computer.
 
-[More Info Here](https://developer.android.com/studio/command-line/adb.html#Enabling)
+## Further Reading
+[Android Guide](https://developer.android.com/studio/command-line/adb.html#Enabling)
+
+[Jeremy Cole Blog Post](https://blog.jcole.us/2017/04/13/wireless-programming-for-ftc-robots/#connect-wirelessly-to-program)

@@ -15,8 +15,8 @@ Technoramic is very happy to have the fantastic support of many wonderful sponso
     <tr style="border:0px;">
       {% for company in rows.row %}
       <td style="border:0px;">
-        <img src="../{{ company.picture }}" alt="{{ company.name }}">
-        <p> {{ company.name }} </p>
+        <a href="{{ company.link}}"><img src="../{{ company.picture }}" alt="{{ company.name }}"></a>
+        <!--p> {{ company.name }} </p-->
       </td>
       {% endfor %}
     </tr>

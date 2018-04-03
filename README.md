@@ -25,3 +25,11 @@ The main settings can be found inside the `_config.yml` file:
 5. Install gulp dependencies by running `npm install`
 6. Run Jekyll and watch files by running `gulp`
 7. Customize and watch the magic happen!
+
+# Alternate Running
+Another way of running the local server is either:
+- running it as a local host using `npm run server`
+
+or
+
+- building the files locally using `npm run build`

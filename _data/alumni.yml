@@ -1,7 +1,21 @@
 - group: "Alumni"
   people:
     - row:
-        - name: Clayton Pope
-          picture: assets/img/alumni/sized/clayton.jpg
-        - name: Niema Foroughi
-          picture: assets/img/alumni/sized/niema.jpg
+      - name: Clayton Pope
+        picture: assets/img/alumni/sized/clayton.jpg
+      - name: Niema Foroughi
+        picture: assets/img/alumni/sized/niema.jpg
+      - name: Ehan Kamat
+        picture: assets/img/alumni/sized/ehan.jpg
+    - row:
+      - name: Kendall Work
+        picture: assets/img/alumni/sized/kendall.jpg
+      - name: Megan Currie
+        picture: assets/img/alumni/sized/megan.jpg
+      - name: Blake Abel
+        picture: assets/img/alumni/sized/blake.jpg
+    - row:
+      - name: Sofi Carr
+        picture: assets/img/alumni/sized/sofi.jpg
+      - name: Allen Buckner
+        picture: assets/img/team/sized/na.jpg

@@ -1,58 +1,22 @@
 - group: "Members"
   people:
     - row:
-        - name: Kendall Work
-          picture: assets/img/team/sized/kendall.jpg
-        - name: Megan Currie
-          picture: assets/img/team/sized/megan.jpg
-        - name: Blake Abel
-          picture: assets/img/team/sized/blake.jpg
+      - name: Kyle Fehr
+        picture: assets/img/team/sized/kyle.jpg
+      - name: Kellen Von Hoven
+        picture: assets/img/team/sized/na.jpg
+      - name: Nick Clifford
+        picture: assets/img/team/sized/nick.jpg
     - row:
-        - name: Ehan Kamat
-          picture: assets/img/team/sized/ehan.jpg
-        - name: Alex Migala
-          picture: assets/img/team/sized/alex.jpg
-        - name: Nick Clifford
-          picture: assets/img/team/sized/nick.jpg
+      - name: Shibashis Mandal
+        picture: assets/img/team/sized/na.jpg
+      - name: Jude Sorkin
+        picture: assets/img/team/sized/jude.jpg
+      - name: Prithvi Dhanabal
+        picture: assets/img/team/sized/na.jpg
     - row:
-        - name: Jude Sorkin
-          picture: assets/img/team/sized/jude.jpg
-        - name: Will Schott
-          picture: assets/img/team/sized/will.jpg
-        - name: Kyle Fehr
-          picture: assets/img/team/sized/kyle.jpg
-    - row:
-        - name: Sofi Carr
-          picture: assets/img/team/sized/sofi.jpg
-        - name: Lucas McCarty
-          picture: assets/img/team/sized/lucas.jpg
-        - name: Sebastian Neumann
-          picture: assets/img/team/sized/sebastian.jpg
-    - row:
-        - name: Liam Weber
-          picture: assets/img/team/sized/liam.jpg
-        - name: Allen Buckner
-          picture: assets/img/team/sized/na.jpg
-        - name: Prithvi Dhanabal
-          picture: assets/img/team/sized/na.jpg
-    - row:
-        - name: Hasani Spann
-          picture: assets/img/team/sized/na.jpg
-        - name: Kellen Von Hoven
-          picture: assets/img/team/sized/na.jpg
-        - name: Cassidy Kearins
-          picture: assets/img/team/sized/na.jpg
-    - row:
-        - name: Benjamin Hollander-Bodie
-          picture: assets/img/team/sized/na.jpg
-        - name: Grace Lee
-          picture: assets/img/team/sized/na.jpg
-        - name: Maxim Novak
-          picture: assets/img/team/sized/na.jpg
-    - row:
-        - name: Celia Sprong
-          picture: assets/img/team/sized/na.jpg
-        - name: Jacob Tielking
-          picture: assets/img/team/sized/na.jpg
-        - name: Shibashis Mandal
-          picture: assets/img/team/sized/na.jpg
+      - name: Hasani Spann
+        picture: assets/img/team/sized/na.jpg
+      - name: Maxim Novak
+        picture: assets/img/team/sized/na.jpg
+

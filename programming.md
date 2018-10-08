@@ -9,7 +9,7 @@ This is the home for all of the software development being done on the team!
 
 ### [Robotplus](https://github.com/MICDSRobotics/robotplus)
 
-Check out robotplus, our repository for all for the reusable code we have developed over the years. It has wrappers for sensors, hardware classes with extra functions, and all sorts of added goodies. If you're ever stuck getting your drivetrain to work or not sur ehow to initilize Vuforia and the sample code doesn't help, you can always dig through here for some tips!
+Check out robotplus, our repository for all for the reusable code we have developed over the years. It has wrappers for sensors, hardware classes with extra functions, and all sorts of added goodies. If you're ever stuck getting your drivetrain to work or not sure how to initialize Vuforia and the sample code doesn't help, you can always dig through here for some tips!
 
 * Javadoc hosted here: [{{ site.url }}/robotplus]({{ site.url }}/robotplus)
 

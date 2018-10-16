@@ -20,3 +20,7 @@
       - name: Omega
         picture: assets/img/sponsors/omega.png
         link: https://www.omegawatches.com/en-us/
+    - row:
+      - name: SolidWorks
+        picture: assets/img/sponsors/solidworks.png
+        link: https://www.solidworks.com/
